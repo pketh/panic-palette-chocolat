@@ -2,7 +2,8 @@
 
 Because [Panic][panic] is awesome, but [Coda][coda] just isn’t the editor for me.
 
-<img src=“https://dl.dropboxusercontent.com/u/366007/shares/panic-palette@2x.png”>
+
+![editor screenshot](https://dl.dropboxusercontent.com/u/366007/shares/panic-palette.png)
 
 ## Set me up
 
