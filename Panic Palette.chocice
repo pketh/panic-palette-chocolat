@@ -1,0 +1,172 @@
+(author [Pirijan Keth, orig. Panic])
+
+(!default
+    (caret [rgba(1.000000, 1.000000, 1.000000, 1.000000)])
+    (selection [rgba(0.000000, 0.270588, 0.600000, 1.000000)])
+    (line-highlight [rgba(0.054902, 0.086275, 0.129412, 1.000000)])
+    (invisibles [rgba(0.270588, 0.274510, 0.250980, 1.000000)])
+    (color [rgba(0.964706, 0.968627, 0.933333, 1.000000)])
+    (background [rgba(0.066667, 0.109804, 0.164706, 1.000000)]))
+
+(apply comment
+    Comment
+    (italic)
+    (color [rgba(0.513725, 0.549020, 0.584314, 1.000000)]))
+
+(apply [keyword, storage]
+    Keyword
+    (color [rgba(0.972549, 0.160784, 0.223529, 1.000000)]))
+
+(apply constant.numeric
+    Number
+    (color [rgba(0.435294, 0.305882, 0.737255, 1.000000)]))
+
+(apply constant
+    [User-defined constant]
+    (color [rgba(0.376471, 0.815686, 0.686275, 1.000000)]))
+
+(apply constant.language
+    [Built-in constant]
+    (color [rgba(0.376471, 0.815686, 0.686275, 1.000000)]))
+
+(apply [variable.language, variable.other]
+    Variable
+    (color [rgba(0.388235, 0.800000, 0.890196, 1.000000)]))
+
+(apply string
+    String
+    (color [rgba(0.988235, 0.756863, 0.274510, 1.000000)]))
+
+(apply [constant.character.escape, string source]
+    [String interpolation]
+    (color [rgba(0.376471, 0.815686, 0.686275, 1.000000)])
+    (background [rgba(0.782577, 0.000000, 0.239700, 0.030000)]))
+
+(apply meta.preprocessor
+    [Preprocessor line]
+    (color [rgba(0.435294, 0.305882, 0.737255, 1.000000)]))
+
+(apply keyword.control.import
+    [Preprocessor directive]
+    (color [rgba(0.388235, 0.800000, 0.890196, 1.000000)]))
+
+(apply [entity.name.function, support.function.any-method]
+    [Function name]
+    (color [rgba(0.231373, 0.921569, 0.164706, 1.000000)]))
+
+(apply entity.name.type
+    [Type name]
+    (underline))
+
+(apply entity.other.inherited-class
+    [Inherited class name]
+    (italic))
+
+(apply variable.parameter
+    [Function parameter]
+    (italic))
+
+(apply storage.type.method
+    [Function argument and result types]
+    (color [rgba(0.964706, 0.968627, 0.933333, 1.000000)]))
+
+(apply [meta.section entity.name.section, declaration.section entity.name.section]
+    Section
+    (italic))
+
+(apply support.function
+    [Library function]
+    (color [rgba(0.231373, 0.921569, 0.164706, 1.000000)]))
+
+(apply [support.class, support.type]
+    [Library object]
+    (color [rgba(0.964706, 0.968627, 0.933333, 1.000000)]))
+
+(apply support.constant
+    [Library constant]
+    (color [rgba(0.376471, 0.815686, 0.686275, 1.000000)]))
+
+(apply support.variable
+    [Library variable]
+    (color [rgba(0.388235, 0.800000, 0.890196, 1.000000)]))
+
+(apply keyword.operator.js
+    [JS: Operator]
+    (color [rgba(0.231373, 0.921569, 0.164706, 1.000000)]))
+
+(apply invalid.deprecated.trailing-whitespace
+    [Invalid trailing whitespace]
+    (background [rgba(1.000000, 0.815686, 0.815686, 1.000000)]))
+
+(apply [text source, string.unquoted]
+    [Embedded source]
+    (background [rgba(0.000000, 0.000000, 0.000000, 0.050980)]))
+
+(apply [text source string.unquoted, text source text source]
+    [Embedded embedded source]
+    (background [rgba(0.000000, 0.000000, 0.000000, 0.058824)]))
+
+(apply meta.tag.preprocessor.xml
+    [Markup XML declaration]
+    (color [rgba(0.407843, 0.407843, 0.356863, 1.000000)]))
+
+(apply [meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml string]
+    [Markup DOCTYPE]
+    (color [rgba(0.533333, 0.533333, 0.533333, 1.000000)]))
+
+(apply string.quoted.docinfo.doctype.DTD
+    [Markup DTD]
+    (italic))
+
+(apply [meta.tag, declaration.tag]
+    [Markup tag]
+    (color [rgba(0.972549, 0.160784, 0.223529, 1.000000)]))
+
+(apply entity.name.tag
+    [Markup name of tag]
+    (color [rgba(0.972549, 0.160784, 0.223529, 1.000000)]))
+
+(apply entity.other.attribute-name
+    [Markup tag attribute]
+    (color [rgba(0.231373, 0.921569, 0.164706, 1.000000)]))
+
+(apply markup.heading
+    [Markup: Heading]
+    (bold)
+    (color [rgba(0.388235, 0.800000, 0.890196, 1.000000)]))
+
+(apply markup.quote
+    [Markup: Quote]
+    (italic)
+    (color [rgba(0.515428, 0.620912, 0.778167, 1.000000)]))
+
+(apply markup.list
+    [Markup: List]
+    (color [rgba(0.964706, 0.968627, 0.933333, 1.000000)]))
+
+(apply bold
+    (bold))
+
+(apply italic
+    (italic))
+
+(apply underline
+    (underline))
+
+(apply bold
+    (bold))
+
+(apply italic
+    (italic))
+
+(apply underline
+    (underline))
+
+(apply bold
+    (bold))
+
+(apply italic
+    (italic))
+
+(apply underline
+    (underline))
