@@ -11,7 +11,7 @@
 (apply comment
     Comment
     (italic)
-    (color [rgba(0.513725, 0.549020, 0.584314, 1.000000)]))
+    (color [rgba(0.360503, 0.386624, 0.410432, 1.000000)]))
 
 (apply [keyword, storage]
     Keyword
@@ -143,6 +143,15 @@
 (apply markup.list
     [Markup: List]
     (color [rgba(0.964706, 0.968627, 0.933333, 1.000000)]))
+
+(apply bold
+    (bold))
+
+(apply italic
+    (italic))
+
+(apply underline
+    (underline))
 
 (apply bold
     (bold))
