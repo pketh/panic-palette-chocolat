@@ -7,7 +7,7 @@ Because [Panic][panic] is awesome, but [Coda][coda] just isn’t the editor for 
 
 ## Set me up
 
-- copy `Panic Palette.chocice` to 
+- copy `Panic Palette.chocice` to `~/Library/Application Support/Chocolat/Themes/`
 - in [Chocolat][choc], choose the theme in to Preferences > Colors
 - I’m using `Panic Sans` 13px but `Consolas` or `Menlo` are great choices.
 
